@@ -22,10 +22,12 @@
   </header>
   <div class="container">
     <div class="text-center mb-5">
-      <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#formModal">Add Task</button>
+      <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#formModal" id="add-task">Add Task</button>
     </div>
+
+
     <!-- Todo: Create a modal with a form to add tasks -->
-    <form method="get">
+    <form method="get" id="task-form">
       <div>
         <label for="title">Task Title</label>
         <input type="text" name="task-title" id="title" required>
@@ -39,10 +41,11 @@
         <input type="text" name="description" id="description">
       </div>
       <div>
-        <button>Add Task</button>
+        <button type="submit" id="submit-task">Add Task</button>
       </div>
-
     </form>
+
+
     <div class="row swim-lanes text-center justify-content-between">
       <div class="col-12 col-lg-4 d-flex">
         <div id="to-do" class="card border-light mb-3 lane flex-grow-1">
